@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="web, html, css, javascript, js, java, python">
+    <meta name="description" content="World best web development tutorials">
+    <meta name="author" content="Migara Denuwan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Migara-Denuwan</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/website(Icon)/website-icon.png">
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem('theme');
+        const preferredTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        const theme = storedTheme === 'light' || storedTheme === 'dark' ? storedTheme : preferredTheme;
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+<!-- sdfghjkl;lkjhgfdfghjkl;lkjhv -->
+
+</head>
+<body>
+
+<canvas id="plexus-bg" aria-hidden="true"></canvas>
+
+
+<!-- Loading Screen -->
+<div id="loading">
+  <div class="cube-container">
+    <div class="cube">
+      <div class="cube-face"><i class="fas fa-code"></i></div>
+      <div class="cube-face"><i class="fas fa-laptop-code"></i></div>
+      <div class="cube-face"><i class="fas fa-server"></i></div>
+      <div class="cube-face"><i class="fas fa-database"></i></div>
+      <div class="cube-face"><i class="fas fa-mobile-alt"></i></div>
+      <div class="cube-face"><i class="fas fa-cloud"></i></div>
+    </div>
+  </div>
+
+  <div class="loading-text">Loading</div>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+</div>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand">
+  <div class="container">
+    <a class="navbar-brand" href="#">M!gara.</a>
+
+    <button
+      class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#tools">Tools</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#featured-projects">Featured Projects</a>
+        <!-- <a class="nav-link" href="#gallery">Gallery</a> -->
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to light mode">
+        <i class="fas fa-moon theme-toggle-icon" aria-hidden="true"></i>
+        <span class="theme-toggle-text">Dark</span>
+      </button>
+      
+       <a href="https://github.com/MigaraDenuwan"class="btn btn-primary-custom ms-lg-3">GitHub</a>
+
+    </div>
+  </div>
+</nav>
+
+<!--hero section-->
+<section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="hero-content">
+              <h1 class="hero-title">Hi, I'm Migara Denuwan</h1>
+              <h2 class="hero-subtitle">
+                <span class="tw-start">I'm a</span>
+                <span class="typewriter-wrap">
+                  <span id="typewriterText" class="typewriter-text" aria-live="polite"></span>
+                  <span class="typewriter-cursor" aria-hidden="true"></span>
+                </span>
+              </h2>
+              <p class="text-white-50 mb-4">
+                Software Engineering specializing in building scalable web and mobile applications. Passionate about developing efficient, user-focused and AI-driven solutions using modern technologies, with a growing interest in DevOps, cloud computing, and intelligent systems.
+              </p>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="#contact" class="btn btn-primary-custom">Hire Me</a>
+                <a
+                  href="assets/doc/Resume_MigaraDenuwan.pdf"
+                  class="btn download-cv"
+                  download="Resume_MigaraDenuwan.pdf"
+                  >Download CV</a
+                >
+              </div>
+              <div class="social-icons">
+                <a
+                  href="https://github.com/MigaraDenuwan"
+                  class="social-icon"
+                  aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/migara-denuwan"
+                  class="social-icon"
+                  aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61554799927663"
+                  class="social-icon"
+                  aria-label="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://wa.me/94764228336"
+                  class="social-icon"
+                  aria-label="WhatsApp"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/migara_denuwan/"
+                  class="social-icon"
+                  aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="mailto:migaradenuwan@outlook.com"
+                  class="social-icon"
+                  aria-label="Email"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+                <a
+                  href="tel:+94764228336"
+                  class="social-icon"
+                  aria-label="Phone"
+                  ><i class="fas fa-phone"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+            <div class="hero-illustration">
+              <div class="neon-terminal">
+                <div class="neon-screen">
+                  <div class="code-line" style="width: 80%"></div>
+                  <div class="code-line" style="width: 65%"></div>
+                  <div class="code-line" style="width: 75%"></div>
+                  <div class="code-line" style="width: 60%"></div>
+                  <div class="neon-cursor"></div>
+                </div>
+                <div class="neon-buttons">
+                  <div class="neon-button" style="--color: #ff2d75"></div>
+                  <div class="neon-button" style="--color: #ffcc00"></div>
+                  <div class="neon-button" style="--color: #00ff88"></div>
+                </div>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!--about section-->
+<section id="about" class="about-section">
+    <div class="container">
+    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+
+    <div class="about-row" data-aos="fade-up" data-aos-delay="80">
+            <!-- Image -->
+            <div class="about-img-col">
+        <div class="about-image-wrapper" data-aos="zoom-in" data-aos-delay="120">
+                    <img src="assets/img/profile-img/profile-photo.jpg" alt="About Migara" class="about-image">
+                </div>
+            </div>
+      <div class="about-content-col" data-aos="fade-left" data-aos-delay="160">
+                <div class="about-content">
+                    <h2>Who am I?</h2>
+                    <h3>Software Engineer &amp; Full-Stack Developer</h3>
+
+                    <p>
+                        My name is Migara Denuwan, a final-year Software Engineering undergraduate currently pursuing a BSc (Hons) in Information Technology, specializing in Software Engineering. I am passionate about building innovative, scalable solutions across web and mobile platforms.
+                    </p>
+                    <p>
+                        With hands-on experience in full-stack development, mobile application development, and modern technologies, I enjoy transforming ideas into real-world applications. I have worked with technologies such as React, Node.js, Spring Boot, and Android development, and I am continuously exploring new areas including AI-powered solutions, DevOps practices, and cloud-based systems.
+                    </p>
+                    <p>
+                      I am driven by a strong desire to learn, adapt, and grow in the ever-evolving tech landscape. Whether it's developing responsive web applications, designing efficient backend systems, or creating user-friendly mobile apps, I am committed to delivering impactful and high-quality solutions.
+                    </p>
+                    <div class="info-cards">
+                      <div class="info-card" data-aos="flip-left" data-aos-delay="220">
+                            <div class="info-card-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="info-card-text">
+                                <h5>Education</h5>
+                                  <p>BSc. (Hons) in Information Technology specializing in Software Engineering at SLITT</p>
+                                  <p>GCE Advanced Level - Physical Science (1B 2C’s)
+                                    Mahanama College - Colombo</p>                      
+                                  <p>GCE Ordinary Level - (6A’s 2B’s 1C)
+                                     Mahanama College - Colombo</p>
+                            </div>
+                        </div>
+                      <div class="info-card" data-aos="flip-right" data-aos-delay="280">
+                        <div class="info-card-icon">
+                          <i class="fas fa-code"></i>
+                        </div>
+                        <div class="info-card-text">
+                          <h5>Experience</h5>
+                          <div class="info-card-text">
+                              <p><b>Tokyo Cement Group</b> - Software Engineer Intern</p><p>(May 2025 – Nov 2026)</p>
+
+                              <p><b>Synex International (Pvt) Ltd</b> - Software Engineer Intern</p><p>(Dec 2024 – May 2025)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--skill section-->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+
+    <div class="cards-container">
+
+      <!-- Frontend -->
+      <div class="card" data-aos="flip-left">
+        <div class="card-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h2>Frontend Development</h2>
+        <p>Building responsive and user-friendly web interfaces using modern technologies.</p>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Next.js</span>
+          <span>Tailwind CSS</span>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="card" data-aos="flip-left" data-aos-delay="100">
+        <div class="card-icon">
+          <i class="fas fa-server"></i>
+        </div>
+        <h2>Backend Development</h2>
+        <p>Developing scalable APIs and server-side applications.</p>
+        <div class="tags">
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>Spring Boot</span>
+          <span>Java</span>
+          <span>Python</span>
+          <span>REST APIs</span>
+        </div>
+      </div>
+
+      <!-- AI -->
+      <div class="card" data-aos="flip-left" data-aos-delay="200">
+        <div class="card-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h2>AI-Driven Solutions</h2>
+        <p>Building intelligent and data-driven applications using modern AI technologies.</p>
+        <div class="tags">
+          <span>Machine Learning</span>
+          <span>Deep Learning</span>
+          <span>TensorFlow</span>
+          <span>Keras</span>
+          <span>Python</span>
+          <span>Gemini API</span>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="card" data-aos="flip-left" data-aos-delay="300">
+        <div class="card-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h2>Mobile Development</h2>
+        <p>Creating cross-platform and native mobile applications.</p>
+        <div class="tags">
+          <span>Kotlin</span>
+          <span>Android</span>
+          <span>React Native</span>
+          <span>Expo</span>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="card" data-aos="flip-left" data-aos-delay="400">
+        <div class="card-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h2>Databases</h2>
+        <p>Designing and managing efficient database systems.</p>
+        <div class="tags">
+          <span>MongoDB</span>
+          <span>MySQL</span>
+          <span>PostgreSQL</span>
+          <span>MS SQL Server</span>
+        </div>
+      </div>
+
+      <!-- DevOps & Tools -->
+      <div class="card" data-aos="flip-left" data-aos-delay="500">
+        <div class="card-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h2>DevOps & Tools</h2>
+        <p>Tools and technologies for development, deployment, and collaboration.</p>
+        <div class="tags">
+          <span>Docker</span>
+          <span>Kubernetes</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>Postman</span>
+          <span>Figma</span>
+          <span>Azure</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Tools Section -->
+<section id="tools" class="tools-section">
+  <div class="tools-container">
+    <h2 class="section-title" data-aos="fade-up">Tools & Technologies</h2>
+    <p class="tools-subtitle" data-aos="fade-up" data-aos-delay="100">
+      I work with modern technologies to build scalable, efficient, and high-quality software solutions.
+    </p>
+
+    <div class="tools-grid">
+
+      <!-- Frontend -->
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="50">
+        <img src="assets/img/tools/html.png" alt="HTML5">
+        <span>HTML5</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="100">
+        <img src="assets/img/tools/social.png" alt="CSS3">
+        <span>CSS3</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="150">
+        <img src="assets/img/tools/java-script.png" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="200">
+        <img src="assets/img/tools/typescript.png" alt="TypeScript">
+        <span>TypeScript</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="250">
+        <img src="assets/img/tools/react.png" alt="React">
+        <span>React</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="300">
+        <img src="assets/img/tools/nextjs.webp" alt="Next.js">
+        <span>Next.js</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="350">
+        <img src="assets/img/tools/tailwind.png" alt="Tailwind CSS">
+        <span>Tailwind CSS</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="400">
+        <img src="assets/img/tools/reactnative.png" alt="React Native">
+        <span>React Native</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="450">
+        <img src="assets/img/tools/expo.png" alt="Expo">
+        <span>Expo</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="500">
+        <img src="assets/img/tools/kotlin.png" alt="Kotlin">
+        <span>Kotlin</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="550">
+        <img src="assets/img/tools/android.png" alt="Android">
+        <span>Android</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="600">
+        <img src="assets/img/tools/flutter.png" alt="Flutter">
+        <span>Flutter</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="650">
+        <img src="assets/img/tools/dart.png" alt="Dart">
+        <span>Dart</span>
+      </div>
+
+      <!-- Backend -->
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="700">
+        <img src="assets/img/tools/nodejs.webp" alt="Node.js">
+        <span>Node.js</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="750">
+        <img src="assets/img/tools/express.png" alt="Express.js">
+        <span>Express.js</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="800">
+        <img src="assets/img/tools/spring.png" alt="Spring Boot">
+        <span>Spring Boot</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="850">
+        <img src="assets/img/tools/java.png" alt="Java">
+        <span>Java</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="900">
+        <img src="assets/img/tools/Python-logo-notext.svg.png" alt="Python">
+        <span>Python</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="950">
+        <img src="assets/img/tools/php.png" alt="PHP">
+        <span>PHP</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1000">
+        <img src="assets/img/tools/c.png" alt="C programming">
+        <span>C programming</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1050">
+        <img src="assets/img/tools/c++.png" alt="C++ programming">
+        <span>C++ programming</span>
+      </div>
+
+      <!-- Databases -->
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1100">
+        <img src="assets/img/tools/mongodb.png" alt="MongoDB">
+        <span>MongoDB</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1150">
+        <img src="assets/img/tools/mysql.png" alt="MySQL">
+        <span>MySQL</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1200">
+        <img src="assets/img/tools/PostgresSQL.png" alt="PostgreSQL">
+        <span>PostgreSQL</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1250">
+        <img src="assets/img/tools/mssql.webp" alt="MS SQL Server">
+        <span>MS SQL</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1300">
+        <img src="assets/img/tools/firebase.png" alt="Firebase">
+        <span>Firebase</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1350">
+        <img src="assets/img/tools/Oracal.png" alt="Oracal">
+        <span>Oracal</span>
+      </div>
+
+      <!-- DevOps & Tools -->
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1400">
+        <img src="assets/img/tools/docker.png" alt="Docker">
+        <span>Docker</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1450">
+        <img src="assets/img/tools/kubernetes.png" alt="Kubernetes">
+        <span>Kubernetes</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1500">
+        <img src="assets/img/tools/selenium.png" alt="Selenium">
+        <span>Selenium</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1550">
+        <img src="assets/img/tools/sonarcloud.png" alt="SonarCloud">
+        <span>SonarCloud</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1600">
+        <img src="assets/img/tools/git.png" alt="Git">
+        <span>Git</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1650">
+        <img src="assets/img/tools/github.png" alt="GitHub">
+        <span>GitHub</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1700">
+        <img src="assets/img/tools/gitlab.webp" alt="GitLab">
+        <span>GitLab</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1750">
+        <img src="assets/img/tools/jira.png" alt="Jira">
+        <span>Jira</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1800">
+        <img src="assets/img/tools/swagger.png" alt="Swagger">
+        <span>Swagger</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1850">
+        <img src="assets/img/tools/postman.png" alt="Postman">
+        <span>Postman</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1900">
+        <img src="assets/img/tools/figma.png" alt="Figma">
+        <span>Figma</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="1950">
+        <img src="assets/img/tools/azure.png" alt="Azure">
+        <span>Azure</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="2000">
+        <img src="assets/img/tools/aws.png" alt="AWS">
+        <span>AWS</span>
+      </div>
+
+      <!-- IDEs -->
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="2050">
+        <img src="assets/img/tools/Visual Studio Code (VS Code).png" alt="VS Code">
+        <span>VS Code</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="2100">
+        <img src="assets/img/tools/IntelliJ_IDEA_Icon.svg.png" alt="IntelliJ IDEA">
+        <span>IntelliJ IDEA</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="2150">
+        <img src="assets/img/tools/androidstudio.webp" alt="Android Studio">
+        <span>Android Studio</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="2200">
+        <img src="assets/img/tools/Linux.png" alt="Linux">
+        <span>Linux</span>
+      </div>
+
+      <div class="tool-card" data-aos="flip-left" data-aos-delay="2250">
+        <img src="assets/img/tools/TensorFlow.png" alt="TensorFlow">
+        <span>TensorFlow</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--projects section-->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Projects</h2>
+
+    <div class="projects-container">
+
+      <!-- Happy Man Village -->
+      <div class="project-box" data-aos="fade-right" data-aos-delay="100">
+        <span></span>
+        <div class="project-content">
+          <div class="project-tag">Spring Boot</div>
+          <div class="project-tag">Web</div>
+          <h2>Happy Man Village</h2>
+          <p>Villa management system with Spring Boot backend and Azure deployment.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="live-link" href="#" target="_blank"><i class="fa-regular fa-eye"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Egg Hunting -->
+      <div class="project-box" data-aos="fade-up" data-aos-delay="200">
+        <span></span>
+        <div class="project-content">
+          <div class="project-tag">Kotlin</div>
+          <div class="project-tag">Android</div>
+          <h2>Egg Hunting Game</h2>
+          <p>Android game built using Kotlin in Android Studio.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="live-link" href="#" target="_blank"><i class="fa-regular fa-eye"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TaskEase -->
+      <div class="project-box" data-aos="fade-left" data-aos-delay="300">
+        <span></span>
+        <div class="project-content">
+          <div class="project-tag">Kotlin</div>
+          <div class="project-tag">Android</div>
+          <h2>TaskEase</h2>
+          <p>Android task management application for daily productivity.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="live-link" href="#" target="_blank"><i class="fa-regular fa-eye"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MomCare -->
+      <div class="project-box" data-aos="fade-right" data-aos-delay="400">
+        <span></span>
+        <div class="project-content">
+          <div class="project-tag">React Native</div>
+          <div class="project-tag">Expo</div>
+          <div class="project-tag">Azure</div>
+          <h2>MomCare</h2>
+          <p>Healthcare app for mothers with doctor locator and tracking features.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="live-link" href="#" target="_blank"><i class="fa-regular fa-eye"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ProMentor -->
+      <div class="project-box" data-aos="fade-up" data-aos-delay="500">
+        <span></span>
+        <div class="project-content">
+          <div class="project-tag">React</div>
+          <div class="project-tag">MongoDB</div>
+          <div class="project-tag">Gemini API</div>
+          <h2>ProMentor</h2>
+          <p>AI-based learning platform for coding, quizzes, and code review.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="live-link" href="#" target="_blank"><i class="fa-regular fa-eye"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Snap Eats -->
+      <div class="project-box" data-aos="fade-left" data-aos-delay="600">
+        <span></span>
+        <div class="project-content">
+          <div class="project-tag">Microservices</div>
+          <div class="project-tag">Spring Boot</div>
+          <div class="project-tag">Docker</div>
+          <h2>Snap Eats</h2>
+          <p>Food delivery system built with microservices architecture.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="live-link" href="#" target="_blank"><i class="fa-regular fa-eye"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Classification -->
+      <div class="project-box" data-aos="fade-right" data-aos-delay="700">
+        <span></span>
+        <div class="project-content">
+          <div class="project-tag">Python</div>
+          <div class="project-tag">TensorFlow</div>
+          <div class="project-tag">Keras</div>
+          <h2>Image Classification</h2>
+          <p>CNN vs RNN deep learning model comparison project.</p>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="live-link" href="#" target="_blank"><i class="fa-regular fa-eye"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--featured projects section-->
+<section id="featured-projects" class="assignments-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+  </div>
+
+  <div class="assign-wrapper">
+    <div class="assign-cols">
+
+      <!-- Project 1 -->
+      <div class="assign-col" ontouchstart="this.classList.toggle('hover');" data-aos="fade-up" data-aos-delay="50">
+        <div class="flip-container">
+          <div class="flip-front">
+            <div class="flip-inner">
+              <p>Project</p>
+              <span>Franklin</span>
+            </div>
+          </div>
+          <div class="flip-back">
+            <div class="flip-inner">
+              <p>Choose an action</p>
+              <div class="back-actions">
+                <a class="assign-btn view-btn" href="https://franklin-frontend.onrender.com" target="_blank">View</a>
+                <a class="assign-btn code-btn" href="https://github.com/MigaraDenuwan/Franklin.git" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="assign-col" ontouchstart="this.classList.toggle('hover');" data-aos="fade-up" data-aos-delay="200">
+        <div class="flip-container">
+          <div class="flip-front">
+            <div class="flip-inner">
+              <p>Project</p>
+              <span>Trust Energy Solutions</span>
+            </div>
+          </div>
+          <div class="flip-back">
+            <div class="flip-inner">
+              <p>Choose an action</p>
+              <div class="back-actions">
+                <a class="assign-btn view-btn" href="https://www.trustenergysolutionslanka.com" target="_blank">View</a>
+                <a class="assign-btn code-btn" href="https://github.com/MigaraDenuwan/Trust-Energy-Solution.git" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="assign-col" ontouchstart="this.classList.toggle('hover');" data-aos="fade-up" data-aos-delay="350">
+        <div class="flip-container">
+          <div class="flip-front">
+            <div class="flip-inner">
+              <p>Project</p>
+              <span>Issue Tracker</span>
+            </div>
+          </div>
+          <div class="flip-back">
+            <div class="flip-inner">
+              <p>Choose an action</p>
+              <div class="back-actions">
+                <a class="assign-btn view-btn" href="https://issue-tracker-oo91.onrender.com" target="_blank">View</a>
+                <a class="assign-btn code-btn" href="https://github.com/MigaraDenuwan/Issue-Tracker.git" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="assign-col" ontouchstart="this.classList.toggle('hover');" data-aos="fade-up" data-aos-delay="500">
+        <div class="flip-container">
+          <div class="flip-front">
+            <div class="flip-inner">
+              <p>Project</p>
+              <span>Service Hub</span>
+            </div>
+          </div>
+          <div class="flip-back">
+            <div class="flip-inner">
+              <p>Choose an action</p>
+              <div class="back-actions">
+                <a class="assign-btn view-btn" href="https://service-hub-microservice-project.onrender.com" target="_blank">View</a>
+                <a class="assign-btn code-btn" href="https://github.com/MigaraDenuwan/Service-Hub---Microservice-Project.git" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--`gallery section-->
+<!-- <section id="gallery" class="gallery-section">
+    <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Gallery</h2>
+    <p class="tools-subtitle" data-aos="fade-up" data-aos-delay="100">A Collection of Beautiful and Unforgettable Memories...</p>
+
+        <div class="gallery">
+      <figure data-aos="zoom-in" data-aos-delay="50">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.12 (1).jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+      <figure data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.09 (1).jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+      <figure data-aos="zoom-in" data-aos-delay="150">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.09.jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+      <figure data-aos="zoom-in" data-aos-delay="200">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.13(1).jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+      <figure data-aos="zoom-in" data-aos-delay="250">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.16.jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+      <figure data-aos="zoom-in" data-aos-delay="300">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.12.jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+      <figure data-aos="zoom-in" data-aos-delay="350">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.14 (1).jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+      <figure data-aos="zoom-in" data-aos-delay="400">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.14.jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+      <figure data-aos="zoom-in" data-aos-delay="450">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.15 (1).jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+      <figure data-aos="zoom-in" data-aos-delay="500">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.15 (2).jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+      <figure data-aos="zoom-in" data-aos-delay="550">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.15.jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+      <figure data-aos="zoom-in" data-aos-delay="600">
+            <img src="assets/img/gallery/WhatsApp Image 2026-04-05 at 23.30.13.jpeg" alt="Lorem ipsum dolor sit amet">
+            </figure>
+
+
+        
+        </div>
+    </div>
+</section> -->
+
+
+
+<!--contact section-->
+<section id="contact" class="contact-section">
+  <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-subtitle">Have a project idea or collaboration in mind? Send a message and I will get back to you soon.</p>
+
+        <div class="contact-layout">
+            <div class="contact-panel" data-aos="fade-right" data-aos-delay="120">
+                <h3>Let's Build Something Great</h3>
+                <p>I am available for freelance projects, internships, and software collaborations. Reach me through any of these channels.</p>
+
+                <div class="contact-list">
+                <a class="contact-card" href="mailto:migaradenuwan@outlook.com">
+                    <i class="fas fa-envelope"></i>
+                    <span>migaradenuwan@outlook.com</span>
+                </a>
+                <a class="contact-card" href="tel:+94767885943">
+                    <i class="fas fa-phone"></i>
+                    <span>+94 76 422 8336</span>
+                </a>
+                <a class="contact-card" href="https://www.google.com/maps?q=Colombo,+Sri+Lanka">
+                    <i class="fas fa-location-dot"></i>
+                    <span>Colombo, Sri Lanka</span>
+                </a>
+            </div>
+
+            <div class="contact-socials">
+            <a href="https://github.com/MigaraDenuwan" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/migara-denuwan" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:migaradenuwan@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+    </div>
+
+      <form id="contact-form" class="contact-form" data-aos="fade-left" data-aos-delay="180">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" placeholder="Project discussion" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+
+        <button type="submit" class="contact-submit">Send Message</button>
+        <p id="contact-status" class="contact-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!--footer section -->
+<footer id="bottom">
+    <div class="container footer-container">
+        <div class="footer-top">
+      <div class="footer-profile" data-aos="fade-up" data-aos-delay="100">
+        <div class="footer-profile-icon">
+          <i class="fab fa-github"></i>
+        </div>
+        <h3>Migara Denuwan</h3>
+        <p class="footer-role">BSc. (Hons) in Information Technology specializing in Software Engineering</p>
+            </div>
+
+      <div class="footer-col" data-aos="fade-up" data-aos-delay="180">
+        <h4 class="footer-heading">Contact Info</h4>
+        <div class="footer-line"></div>
+        <div class="footer-contact-list">
+          <a class="footer-contact-item" href="https://www.google.com/maps?q=Colombo,+Sri+Lanka"><i class="fas fa-location-dot"></i><span>Colombo, Sri Lanka</span></a>
+          <a class="footer-contact-item" href="mailto:migaradenuwan@outlook.com"><i class="fas fa-envelope"></i><span>migaradenuwan@outlook.com</span></a>
+          <a class="footer-contact-item" href="tel:+94764228336"><i class="fas fa-phone"></i><span>+94 76 422 8336</span></a>
+        </div>
+            </div>
+
+      <div class="footer-col" data-aos="fade-up" data-aos-delay="260">
+        <h4 class="footer-heading">Follow Me</h4>
+        <div class="footer-line"></div>
+        <div class="footer-social">
+          <a href="https://wa.me/94764228336" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/migara_denuwan/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61554799927663" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/MigaraDenuwan" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/migara-denuwan" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:migaradenuwan@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+94764228336" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col" data-aos="fade-up" data-aos-delay="340">
+        <h4 class="footer-heading">Quick Links</h4>
+        <div class="footer-line"></div>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© <span id="year"></span> Migara Denuwan. All Rights Reserved.</p>
+        </div>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </div>
+</footer>
+
+<div class="scroll-controls" aria-label="Page scroll controls">
+  <a class="scroll-control scroll-control-top" href="#home" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </a>
+  <a class="scroll-control scroll-control-bottom" href="#bottom" aria-label="Scroll to bottom">
+    <i class="fas fa-arrow-down" aria-hidden="true"></i>
+  </a>
+</div>
+
+<script src="js/app.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      once: false,
+      duration: 700,
+      easing: 'ease-out-cubic',
+      offset: 80
+    });
+  </script>
+</body>
+</html>
